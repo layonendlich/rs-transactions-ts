@@ -11,6 +11,7 @@ const envSchema = z.object({
   SERVICE_PORT: z.string().default('3333'),
   SERVICE_HOST: z.string().default('0.0.0.0'),
 
+  DATABASE_CLIENT: z.enum(['sqlite', 'pg']),
   DATABASE_URL: z.string().default('./db/app.db'),
   DATABASE_MIGRATIONS: z.string().default('./db/migrations'),
 })

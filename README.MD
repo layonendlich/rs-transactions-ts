@@ -8,6 +8,7 @@ NODE_ENV=development
 SERVICE_PORT=3333
 SERVICE_HOST=0.0.0.0
 
+DATABASE_CLIENT=sqlite
 DATABASE_URL=./db/app.db
 DATABASE_MIGRATIONS=./db/migrations
 ```
